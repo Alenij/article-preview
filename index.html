@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Article preview</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen">
+      <div
+        class="relative bg-white flex flex-col md:flex-row max-w-[400px] md:max-w-4xl my-16 mx-6 rounded-xl"
+      >
+        <img
+          src="./images/drawers.jpg"
+          alt="green-drawers-image.jpg"
+          class="object-cover rounded-l-xl md:rounded-0 max-h-64 md:max-h-86 md:w-1/3"
+        />
+        <div class="px-8 pt-12 pb-5">
+          <h3 class="text-[hsl(217,19%,35%)] font-bold text-[20px]">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h3>
+          <p class="text-[16px] text-[hsl(214,17%,51%)] mt-4 mb-6">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+
+          <div class="flex items-center gap-5">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="michelle-avataor-icon,jpg"
+              class="w-14 md:w-10 aspect-square rounded-full objectcover"
+            />
+
+            <div class="flex items-center gap-20 md:gap-65 lg:gap-80">
+              <div>
+                <p class="text-[hsl(217,19%,35%)] font-bold text-sm md:text-xs">
+                  Michelle Appleton
+                </p>
+                <p class="text-sm md:text-xs text-[hsl(214,17%,51%)]">
+                  28 Jun 2020
+                </p>
+              </div>
+              <div class="relative">
+                <button
+                  class="bg-[hsl(210,46%,95%)] hover:bg-[hsl(217,19%,35%)] p-4.5 md:p-4 rounded-full relative"
+                  id="shareBtn"
+                >
+                  <img
+                    src="./images/icon-share.svg"
+                    alt="share-icon.svg"
+                    class="w-4 h-4 absolute top-2 left-3 md:left-2 hover:brightness-0 hover:invert"
+                  />
+                </button>
+                <!-- desktop panel class="hidden absolute bottom-25 md:-right-20 max-w-65 items-center bg-[hsl(217,19%,35%)] rounded-xl py-5 px-7"
+-->
+                <div
+                  id="desktopPanel"
+                  class="hidden absolute bottom-14 -left-24 w-max items-center bg-[hsl(217,19%,35%)] rounded-xl py-5 px-7 z-10"
+                >
+                  <div class="flex items-center gap-5">
+                    <div>
+                      <p class="text-[hsl(214,17%,51%)]">S H A R E</p>
+                    </div>
+                    <img
+                      src="./images/icon-facebook.svg"
+                      alt="facebook-icon.svg"
+                      class="w-6 h-6"
+                    />
+                    <img
+                      src="./images/icon-twitter.svg"
+                      alt="twitter-icon.svg"
+                      class="w-6 h-6"
+                    />
+                    <img
+                      src="./images/icon-pinterest.svg"
+                      alt="pinterest-icon.svg"
+                      class="w-6 h-6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Panel -->
+        <div
+          id="mobilePanel"
+          class="hidden absolute bottom-0 left-0 right-0 gap-23 items-center bg-[hsl(217,19%,35%)] rounded-b-xl py-5 px-7"
+        >
+          <div class="flex items-center gap-5">
+            <p class="text-[hsl(214,17%,51%)]">S H A R E</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon.svg"
+              class="w-6 h-6"
+            />
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter-icon.svg"
+              class="w-6 h-6"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="pinterest-icon.svg"
+              class="w-6 h-6"
+            />
+          </div>
+          <button
+            class="bg-[hsl(211,30%,50%)] p-4.5 md:p-4 rounded-full relative md:hidden"
+            id="clsBtn"
+          >
+            <img
+              src="./images/icon-share.svg"
+              alt="share-icon.svg"
+              class="w-4 h-4 absolute top-2 left-3 md:left-2 brightness-0 invert"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>
