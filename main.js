@@ -17,3 +17,15 @@ closeBtn.addEventListener("click", function () {
   mobilePanel.classList.add("hidden");
   mobilePanel.classList.remove("flex");
 });
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth >= 768) {
+    // switched to desktop, close mobile panel
+    mobilePanel.classList.add("hidden");
+    mobilePanel.classList.remove("flex");
+  } else {
+    // switched to mobile, close desktop panel
+    desktopPanel.classList.add("hidden");
+    desktopPanel.classList.remove("flex");
+  }
+});
